@@ -16,6 +16,7 @@ Loading entity
 
 * from repository
 * from parent entity
+* limit, order, offset, pagination (?), ...
 * custom repo methods? (`findByEvenId()`, `findAllOrderedByCity()`, ...)
 
 Updating entity
