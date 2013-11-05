@@ -12,7 +12,7 @@ Conventionally, entities are named in singular (because one instance is *one ent
 
 ```php
 /**
- * @property string $abstract
+ * @property string $summary
  * @property string $isbn
  * @property DateTime $datePublished
  */
@@ -50,7 +50,7 @@ or if we don't plan on extending the mapper, we could specify mapper on the `Boo
 /**
  * @mapper Orm\DibiMapper
  */
- class BooksRepository extends Orm\Repository {}
+class BooksRepository extends Orm\Repository {}
 ```
 
 With the `Book` entity specified above, conventional mapper would expect table such as:
