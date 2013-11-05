@@ -5,7 +5,6 @@ projit forko a vybrat z nej obecne aplikovatelne rady.
 
 Co by stálo za zdokumentování:
 
-* default values http://orm.petrprochazka.com/forum/topic/112/vychozi-hodnoty/, http://orm.petrprochazka.com/forum/topic/132/vychozi-entita-pri-vazbe/
 * jak něco do entity injectnout http://orm.petrprochazka.com/forum/topic/172/v-entite-k-servise/
 * repository pro nezávislé entity http://orm.petrprochazka.com/forum/post/654/#p654
 * jak udělat mapper aby ukládal do víc tabulek http://orm.petrprochazka.com/forum/post/655/#p655

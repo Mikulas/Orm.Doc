@@ -16,10 +16,7 @@ Conventionally, entities are named in singular (because one instance is *one ent
  * @property string $isbn
  * @property DateTime $datePublished
  */
-class Book extends Orm\Entity
-{
-
-}
+class Book extends Orm\Entity {}
 ```
 
 We don't need to specify property `$id` as it's already defined in `Orm\Entity` ([source: Entity]). (Also note it's not defined with `@property` annotation but rather `@property-read` which although being self-explanatory will be fully covered later on in this documentation.)
@@ -33,10 +30,7 @@ Delegates loading, saving, updating and deleting entities to mapper, independent
 Because repository wraps all entities, it's conventionally named as plural of the entity name (as it's *group of entities*).
 
 ```php
-class BooksRepository extends Orm\Repository
-{
-
-}
+class BooksRepository extends Orm\Repository {}
 ```
 
 Mapper
@@ -48,18 +42,15 @@ By default, this mapper uses conventional naming ([api: SqlConventional]). It ex
 As with repository, mapper is also named as plural of the entity name.
 
 ```php
-class BooksMapper extends Orm\DibiMapper
-{
-
-}
+class BooksMapper extends Orm\DibiMapper {}
 ```
 
 or if we don't plan on extending the mapper, we could specify mapper on the `BooksRepository`, without creating the `BooksMapper` class explicitly:
-```
+```php
 /**
  * @mapper Orm\DibiMapper
  */
- class BooksRepository extends Orm\Repository
+ class BooksRepository extends Orm\Repository {}
 ```
 
 With the `Book` entity specified above, conventional mapper would expect table such as:
